@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;500;600;700&display=swap');
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Overpass', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.3;
+  color: #333;
+}
+
+.container {
+  max-width: 144rem;
+  margin: 0 auto;
+  padding: 1rem 3rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.navbar {
+  background-color: #dceffe;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 4rem;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.header {
+  background-color: #f3faff;
+  padding: 10rem 0;
+}
+
+.header-contents {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.header-desc {
+  flex: 0 0 50%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.header-desc h1 {
+  font-size: 5rem;
+}
+
+.header-desc h1 span {
+  color: #024378;
+  text-decoration: underline;
+}
+
+.header-desc p {
+  font-size: 2rem;
+}
+
+.header-contents img {
+  width: 70rem;
+  height: 50rem;
+}
+
+.btns {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  padding: 1.2rem 2.5rem;
+  font-size: 2rem;
+  font-weight: 500;
+  background-color: #024378;
+  color: #fff;
+  letter-spacing: 1px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+}
+
+.btn-outline:link,
+.btn-outline:visited {
+  border: 1px solid #024378;
+  background-color: #f3faff;
+  color: #024378;
+}
+
+.btn:hover {
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.featured {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 5rem;
+  padding: 5rem 0;
+}
+
+.featured h2 {
+  margin-bottom: 5rem;
+  font-size: 2.5rem;
+  color: #aaa;
+}
+
+.featured .images {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+  filter: brightness(2%);
+}
+
+.images img {
+  width: 13rem;
+}
+
+.subtitle {
+  text-align: center;
+  margin: 2rem 0;
+  color: #024378;
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.text-1 {
+  font-size: 2rem;
+  text-align: center;
+  margin: 3rem 0;
+  font-weight: 600;
+}
+
+.text-2 {
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+.about {
+  margin: 5rem;
+  padding: 10rem 0;
+  background-color: #024378;
+  color: #fff;
+}
+
+.about h2 {
+  color: #f3faff;
+}
+
+.about .contents {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.about .about-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border: 1px solid currentColor;
+  padding: 2rem;
+  border-radius: 10px;
+  flex: 0 0 50%;
+}
+
+.about-img img {
+  border-radius: 10px;
+}
+
+.gallery {
+  padding: 10rem 0;
+  color: #024378;
+  margin-top: 5rem;
+}
+
+.gallery .products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.gallery .products img {
+  width: 35rem;
+  height: 35rem;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.gallery .products img:hover {
+  transform: scale(1.02);
+}
+
+.gallery .div {
+  text-align: center;
+  margin: 3rem 0;
+  display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonials {
+  padding: 10rem 0;
+  background-color: #dceffe;
+  color: #024378;
+  margin-top: 5rem;
+}
+
+.testimonials .customers {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.customers .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  text-align: center;
+  background-color: #f3faff;
+  border-radius: 10px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease-out;
+  box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.233);
+}
+
+.customers .card:hover {
+  transform: translateY(-2px);
+}
+
+.customers .card img {
+  border-radius: 50%;
+  width: 10rem;
+}
+
+.card .btn {
+  font-size: 1.6rem;
+  background-color: #f3faff;
+  color: #024378;
+  border: 1px solid currentColor;
+  padding: 1rem 2rem;
+}
+
+.contact {
+  padding: 5rem 0;
+  color: #f3faff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.719),
+      rgba(0, 0, 0, 0.767)
+    ),
+    url(../assets/images/h15.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contact .subtitle {
+  color: #f3faff;
+}
+
+.contact form {
+  width: 100%;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 2rem;
+  border: 1px solid currentColor;
+  border-radius: 10px;
+  letter-spacing: 1px;
+}
+
+form .input-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.input-group label {
+  font-size: 2.3rem;
+}
+
+.input-group input {
+  padding: 1.2rem 2.4rem;
+  font-size: 2rem;
+  border: 1px solid #024378;
+  border-radius: 5px;
+  outline: none;
+  color: #024378;
+}
+
+form .send {
+  text-align: center;
+}
+
+.footer {
+  padding: 3rem 0;
+  background-color: #121c37;
+  color: #dceffe;
+  font-size: 2rem;
+}
+
+.footer a {
+  color: #dceffe;
+}
+
+.footer .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.footer ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer .social-icons {
+  display: flex;
+  gap: 2rem;
+  justify-self: flex-end;
+}
+
+.footer .social-icons i {
+  cursor: pointer;
+}
