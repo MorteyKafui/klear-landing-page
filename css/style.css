@@ -69,6 +69,23 @@ img {
   font-size: 2rem;
 }
 
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.icon-mobile-nav {
+  font-size: 3rem;
+  color: #121c37;
+}
+
+.icon-mobile-nav.close {
+  display: none;
+}
+
 .header {
   background-color: #f3faff;
   padding: 10rem 0;
@@ -186,7 +203,7 @@ img {
 }
 
 .about {
-  margin: 5rem;
+  margin: 5rem 0;
   padding: 10rem 0;
   background-color: #024378;
   color: #fff;
@@ -393,4 +410,76 @@ form .send {
 
 .footer .social-icons i {
   cursor: pointer;
+}
+
+@media screen and (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .btn-mobile-nav {
+    display: block;
+  }
+
+  .header-contents {
+    flex-direction: column;
+  }
+
+  .about .contents {
+    flex-direction: column;
+  }
+
+  .gallery .products {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .testimonials .customers {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer .container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 34em) {
+  .header img {
+    width: 50rem;
+  }
+
+  .featured img {
+    width: 8rem;
+  }
+}
+
+@media screen and (max-width: 26em) {
+  html {
+    font-size: 45%;
+  }
+
+  .header img {
+    width: 35rem;
+  }
+
+  .featured .images img {
+    width: 5rem;
+  }
+
+  .gallery .products {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .testimonials .customers {
+    grid-template-columns: 1fr;
+  }
+
+  .footer .container {
+    grid-template-columns: 1fr;
+  }
 }
